@@ -1,23 +1,21 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <div class="">
+    <common-header :params="{title:'详情',backgroundColor:'#07975a',color:'#fff'}"></common-header>
+    62
+    424545454545
   </div>
+
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  import CommonHeader from "./components/commonHeader";
+
+  export default {
+    name: "sampleDocumentOne",
+    components: {CommonHeader}
+  }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+
 </style>
