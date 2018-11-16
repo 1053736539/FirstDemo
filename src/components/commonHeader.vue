@@ -30,6 +30,7 @@
      * rightWidth 右边的宽度 (默认是1rem)
      * rightSize 右边的文字或者图标的大小 (默认是0.3rem)
      */
+
     props: ['params'],
     data(){
       return{
