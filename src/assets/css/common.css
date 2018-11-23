@@ -58,7 +58,7 @@ a{ text-decoration: none; color: #666; -webkit-tap-highlight-color: transparent;
 .opacity_8{ opacity: 0.8; }
 .opacity_5{ opacity: 0.5; }
 .lastbonone:last-child{ border: none; }
-
+.nobor_out{border: none;outline: none;}
 .boxshod_5{box-shadow: 0 0 0.2rem #d6d5d5;}
 
 /*遮罩*/

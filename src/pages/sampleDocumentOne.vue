@@ -1,8 +1,6 @@
 <template>
   <div class="">
     <common-header :params="{title:'详情',backgroundColor:'#07975a',color:'#fff'}"></common-header>
-    62
-    424545454545
   </div>
 
 </template>

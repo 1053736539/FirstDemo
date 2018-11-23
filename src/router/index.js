@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import sampleDocumentOne from '@/pages/sampleDocumentOne'
+import shopCar from '@/pages/shopCar'
+import shoppingCart from '@/pages/shoppingCart'
+
 
 Vue.use(Router)
 
@@ -13,9 +15,14 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: 'sampleDocumentOne',
-      name: 'sampleDocumentOne',
-      component: sampleDocumentOne
+      path: '/shopCar',
+      name: 'shopCar',
+      component: shopCar
+    },
+    {
+      path: '/shoppingCart',
+      name: 'shoppingCart',
+      component: shoppingCart
     }
   ]
 })
