@@ -44,7 +44,6 @@
               selectedIconPath: 'static/images/menu3_on.png',
               url:'mall'
             },
-
             {
               title: '我的',
               iconPath: 'static/images/menu5.png',
