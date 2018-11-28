@@ -1,6 +1,6 @@
 <template>
-  <div class="lg-scroll-wrap-new" ref="lgScrollWrap">
-    <div class="lg-swiper-content">
+  <div class="common-scroll-wrap-new" ref="commonScrollWrap">
+    <div class="common-swiper-content">
       <div class="refreshWrap" v-if="onRefresh && typeof onRefresh ==='function'">
         <div class="chrysanthemum">
           <div class="line" v-for="(item,index) in 12" :key="index"></div>
@@ -225,8 +225,8 @@
     },
     mounted() {
       let This = this;
-      this.wrap = this.$refs.lgScrollWrap;
-      this.content=this.wrap.querySelector('.lg-swiper-content');
+      this.wrap = this.$refs.commonScrollWrap;
+      this.content=this.wrap.querySelector('.common-swiper-content');
       this.refreshWrap=this.wrap.querySelector('.refreshWrap');
       this.sticky=this.wrap.querySelector('.sticky-head');
       this.clacHeight=this.wrap.querySelector('.clac-height');
@@ -329,7 +329,7 @@
 </script>
 
 <style>
-  .lg-scroll-wrap-new {
+  .common-scroll-wrap-new {
     position: fixed;
     left: 0;
     right: 0;
@@ -338,7 +338,7 @@
     overflow: hidden;
   }
 
-  .lg-scroll-wrap-new .load-text {
+  .common-scroll-wrap-new .load-text {
     height: 0.9rem;
     line-height: 0.9rem;
     text-align: center;
@@ -350,7 +350,7 @@
     width: 100%;
   }
 
-  .lg-scroll-wrap-new .refreshWrap {
+  .common-scroll-wrap-new .refreshWrap {
     position: absolute;
     z-index: -1;
     height: 60px;
@@ -371,7 +371,7 @@
     }
   }
 
-  .lg-scroll-wrap-new .chrysanthemum {
+  .common-scroll-wrap-new .chrysanthemum {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -381,7 +381,7 @@
     zoom: 0.3; /*通过修改这个值(值的区间为0-1)的大小来设置菊花的大小*/
   }
 
-  .lg-scroll-wrap-new .chrysanthemum div {
+  .common-scroll-wrap-new .chrysanthemum div {
     width: 3px;
     height: 16px;
     background: #a4a2a4;
@@ -392,62 +392,62 @@
     -webkit-animation: loading 1.2s linear infinite;
   }
 
-  .lg-scroll-wrap-new .chrysanthemum .line:nth-of-type(1) {
+  .common-scroll-wrap-new .chrysanthemum .line:nth-of-type(1) {
     -webkit-transform: rotate(0deg) translate(0, -34px);
     -webkit-animation-delay: 0s;
   }
 
-  .lg-scroll-wrap-new .chrysanthemum .line:nth-of-type(2) {
+  .common-scroll-wrap-new .chrysanthemum .line:nth-of-type(2) {
     -webkit-transform: rotate(30deg) translate(0, -34px);
     -webkit-animation-delay: 0.1s;
   }
 
-  .lg-scroll-wrap-new .chrysanthemum .line:nth-of-type(3) {
+  .common-scroll-wrap-new .chrysanthemum .line:nth-of-type(3) {
     -webkit-transform: rotate(60deg) translate(0, -34px);
     -webkit-animation-delay: 0.2s;
   }
 
-  .lg-scroll-wrap-new .chrysanthemum .line:nth-of-type(4) {
+  .common-scroll-wrap-new .chrysanthemum .line:nth-of-type(4) {
     -webkit-transform: rotate(90deg) translate(0, -34px);
     -webkit-animation-delay: 0.3s;
   }
 
-  .lg-scroll-wrap-new .chrysanthemum .line:nth-of-type(5) {
+  .common-scroll-wrap-new .chrysanthemum .line:nth-of-type(5) {
     -webkit-transform: rotate(120deg) translate(0, -34px);
     -webkit-animation-delay: 0.4s;
   }
 
-  .lg-scroll-wrap-new .chrysanthemum .line:nth-of-type(6) {
+  .common-scroll-wrap-new .chrysanthemum .line:nth-of-type(6) {
     -webkit-transform: rotate(150deg) translate(0, -34px);
     -webkit-animation-delay: 0.5s;
   }
 
-  .lg-scroll-wrap-new .chrysanthemum .line:nth-of-type(7) {
+  .common-scroll-wrap-new .chrysanthemum .line:nth-of-type(7) {
     -webkit-transform: rotate(180deg) translate(0, -34px);
     -webkit-animation-delay: 0.6s;
   }
 
-  .lg-scroll-wrap-new .chrysanthemum .line:nth-of-type(8) {
+  .common-scroll-wrap-new .chrysanthemum .line:nth-of-type(8) {
     -webkit-transform: rotate(210deg) translate(0, -34px);
     -webkit-animation-delay: 0.7s;
   }
 
-  .lg-scroll-wrap-new .chrysanthemum .line:nth-of-type(9) {
+  .common-scroll-wrap-new .chrysanthemum .line:nth-of-type(9) {
     -webkit-transform: rotate(240deg) translate(0, -34px);
     -webkit-animation-delay: 0.8s;
   }
 
-  .lg-scroll-wrap-new .chrysanthemum .line:nth-of-type(10) {
+  .common-scroll-wrap-new .chrysanthemum .line:nth-of-type(10) {
     -webkit-transform: rotate(270deg) translate(0, -34px);
     -webkit-animation-delay: 0.9s;
   }
 
-  .lg-scroll-wrap-new .chrysanthemum .line:nth-of-type(11) {
+  .common-scroll-wrap-new .chrysanthemum .line:nth-of-type(11) {
     -webkit-transform: rotate(300deg) translate(0, -34px);
     -webkit-animation-delay: 1.0s;
   }
 
-  .lg-scroll-wrap-new .chrysanthemum .line:nth-of-type(12) {
+  .common-scroll-wrap-new .chrysanthemum .line:nth-of-type(12) {
     -webkit-transform: rotate(330deg) translate(0, -34px);
     -webkit-animation-delay: 1.1s;
   }

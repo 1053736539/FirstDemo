@@ -68,7 +68,7 @@
 
 <script>
   import CommonHeader from "../components/commonHeader";
-  import LgScrollView from "../components/lgScrollView";
+  import LgScrollView from "../components/commonScrollView";
 
   export default {
     data() {
@@ -100,6 +100,7 @@
         this.allShow = !this.allShow
         for (var i in this.List) {
           this.List[i].show = this.allShow
+          console.log(this.allShow)
         }
         this.account()
       },
@@ -118,7 +119,6 @@
       // 单选
       choose: function (i) {
         this.List[i].show = !this.List[i].show
-        console.log(this.List.length);
         var choose = this.List.filter(function (i) {
           return i.show == true;
         });

@@ -1,0 +1,7 @@
+.cart-item-list li .check{width:0.38rem;height: 0.38rem;background: url("../images/check_out_ico.png")no-repeat center;}
+.po_ab_bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.settlement .check{width:0.38rem;height: 0.38rem;background: url("../images/check_out_ico.png")no-repeat center;}
