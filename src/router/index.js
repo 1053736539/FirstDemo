@@ -29,6 +29,11 @@ export default new Router({
       path: '/shopCartTwo',
       name: 'shopCartTwo',
       component: shopCartTwo
+    },
+    {
+      path: '/testHead',
+      name: 'testHead',
+      component: testHead
     }
   ]
 })
